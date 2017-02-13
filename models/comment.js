@@ -10,8 +10,8 @@ var CommentSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
     },
-    user: { type: Schema.Types.ObjectId, ref: 'user' },
-    post: { type: Schema.Types.ObjectId, ref: 'post' },
+    user: { type: Schema.Types.ObjectId, ref: 'User' },
+    post: { type: Schema.Types.ObjectId, ref: 'Post' },
 })
 CommentSchema.methods = {
 }

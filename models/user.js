@@ -22,8 +22,8 @@ var UserSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
     },
-    posts: [{type: Schema.Types.ObjectId, ref: 'comment'}],
-    comments: [{type: Schema.Types.ObjectId, ref: 'comment'}],
+    posts: [{type: Schema.Types.ObjectId, ref: 'Post'}],
+    comments: [{type: Schema.Types.ObjectId, ref: 'Comment'}],
 })
 UserSchema.methods = {
 }

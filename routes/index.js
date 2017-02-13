@@ -6,6 +6,9 @@ router.get('/', function(req, res) {
 })
 router.post('/posts', IndexController.createPost)
 router.get('/posts', IndexController.findAllPost)
+router.get('/posts/:id', IndexController.findPostById)
+router.post('/comments', IndexController.createComment)
+router.post('/register', IndexController.createUser)
 
 
 

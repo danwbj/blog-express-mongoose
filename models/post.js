@@ -17,8 +17,8 @@ var PostSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
     },
-    user: {type: Schema.Types.ObjectId, ref: 'user'},
-    comments: [{type: Schema.Types.ObjectId, ref: 'comment'}],
+    user: {type: Schema.Types.ObjectId, ref: 'User'},
+    comments: [{type: Schema.Types.ObjectId, ref: 'Comment'}],
 })
 PostSchema.methods = {
 }
